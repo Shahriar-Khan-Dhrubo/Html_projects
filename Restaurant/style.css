@@ -1,0 +1,209 @@
+/* 12-column grid system */
+@media screen and (min-width:700px){
+    
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.fmenu{
+    display: flex;
+    flex-direction: wrap row;
+}
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: "Montserrat", sans-serif;;
+}
+
+/* header design starts here */
+header{
+    background-color: rgb(24, 171, 171);
+    padding: 10px;
+    text-align: center;
+}
+header .icon{
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: white;
+    margin: 5px auto;
+    padding: 10px;
+}
+header .menu{
+    display: flex;
+    flex: wrap row;
+    justify-content: center;
+    align-items: center;
+}
+header .menu a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+header .menu a:hover{
+    transform: scale(1.2);
+}
+header::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* header design ends here */
+
+/* main design starts here  */
+main .banner{
+    background: url('Images/restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .banner h1,main .banner p,.banner button{
+    text-align: center;
+    margin: 10px auto;
+}
+.banner h1{
+    width: 80%;
+    height: 70px;
+    background-color: rgb(225, 225, 45);
+    top: 25%;
+    text-align: center;
+    padding: 10px;
+}
+.banner p{
+    background-color: green;
+    width: 60%;
+    height: 50px;
+    top: 30%;
+    padding: 10px;
+    font-weight: bolder;
+}
+.banner button{
+    background-color: green;
+    width: 20%;
+    height: 30px;
+    top: 40%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 1000px;
+}
+.banner button:hover{
+    background-color: gray;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.about-us{
+    background-color: #64efef;
+    padding: 30px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+main::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* main design ends here  */
+
+/* fmenu design starts here  */
+.fmenu{
+    padding: 10px;
+}
+.menu1,.menu2,.menu3,.menu4{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.menu1:hover,.menu2:hover,.menu3:hover,.menu4:hover{
+    border: 2px solid green;
+    transform: scale(1.015);
+}
+[class*=col-]{
+    width: 100%;
+    float: left;
+}
+.fmenu::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* fmenu design ends here  */
+
+/* footer design starts here  */
+footer{
+    background-color: rgb(110, 65, 153);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+footer .contact{
+    color: white;
+    margin: 5px;
+}
+footer .contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+footer .location-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+footer .copyright{
+    background-color: black;
+    width: 100%;
+}
+.copy{
+    color: red;
+    margin: 5px;
+    padding: 5px;
+}
+.social-media{
+    padding: 10px;
+}
+.social-media .btn{
+    padding: 5px;
+    font-size: 2rem;
+    margin: 5px;
+    border-radius: 10px;
+}
+.social-media .btn:hover{
+    background-color: gray;
+    transform: scale(1.2);
+}
+footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* footer design ends here  */

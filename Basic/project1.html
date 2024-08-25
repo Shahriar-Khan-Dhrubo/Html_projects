@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Project Using Html</title>
+    <style>
+        #naming {
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        #iframing {
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        table {
+            width: 600px;
+            height: 350px;
+            margin: 0px auto;
+            border: 2px solid green;
+            border-collapse: collapse;
+            background-color: gray;
+        }
+
+        caption {
+            margin: 10px auto;
+            font-size: 30px;
+            color: blue;
+        }
+
+        th {
+            font-size: 20px;
+            color: rgb(232, 184, 12);
+            border: 2px solid green;
+            padding: 20px;
+            text-align: center;
+        }
+
+        td {
+            color: rgb(235, 146, 213);
+            border: 2px solid green;
+            padding: 20px;
+            text-align: center;
+        }
+        #developed{
+            color:red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="naming">
+        <h1 id="top">MUAMMAR SHAHRIAR KHAN DHRUBO</h1>
+        <img src="/HTML/Images/01.jpg" alt="Dhrubo" width="300" height="200">
+    </div>
+    <hr>
+    <div id="iframing">
+        <iframe src="https://en.wikipedia.org/wiki/OpenAI/" width="700" height="315"></iframe>
+        <iframe width="700" height="315" src="https://www.youtube.com/embed/rOgdB0ptVqw?si=xngMGhtMEExZYXrh"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi, et eaque quibusdam nobis quam, sequi at,
+        ex sed facilis quae quo quas commodi vitae! Reiciendis, molestiae distinctio adipisci repellendus odio
+        voluptatem eveniet! Quae cumque aperiam repellat voluptas labore quo, incidunt odio deserunt optio. Ducimus rem
+        consequatur vero doloribus tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi, et eaque quibusdam nobis quam, sequi at,
+        ex sed facilis quae quo quas commodi vitae! Reiciendis, molestiae distinctio adipisci repellendus odio
+        voluptatem eveniet! Quae cumque aperiam repellat voluptas labore quo, incidunt odio deserunt optio. Ducimus rem
+        consequatur vero doloribus tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi, et eaque quibusdam nobis quam, sequi at,
+        ex sed facilis quae quo quas commodi vitae! Reiciendis, molestiae distinctio adipisci repellendus odio
+        voluptatem eveniet! Quae cumque aperiam repellat voluptas labore quo, incidunt odio deserunt optio. Ducimus rem
+        consequatur vero doloribus tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi, et eaque quibusdam nobis quam, sequi at,
+        ex sed facilis quae quo quas commodi vitae! Reiciendis, molestiae distinctio adipisci repellendus odio
+        voluptatem eveniet! Quae cumque aperiam repellat voluptas labore quo, incidunt odio deserunt optio. Ducimus rem
+        consequatur vero doloribus tempore!</p>
+    <hr>
+    <table>
+        <caption>Friends Information</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1600073</td>
+                <td>Dhrubo</td>
+                <td>2.83</td>
+            </tr>
+            <tr>
+                <td>1600071</td>
+                <td>Foysal</td>
+                <td>2.90</td>
+            </tr>
+            <tr>
+                <td>1600069</td>
+                <td>Jibon</td>
+                <td>2.81</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <form>
+        <fieldset>   
+            <legend style="text-align: center;">Personal Information</legend>
+            <datalist id="names">
+                <option value="Dhrubo">Dhrubo</option>
+                <option value="Ava">Ava</option>
+                <option value="Dhoni">Dhoni</option>
+                <option value="Dhara">Dhara</option>
+            </datalist>
+            <label for="username">Username : </label>
+            <input type="text" placeholder="Only letters and numbers" list="names" name="username" id="username" required pattern="[a-zA-Z0-9]+"><br><br>
+            <label for="email">Email : </label>
+            <input type="email" placeholder="Enter your mail here" name="email" id="email" required><br><br>
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Enter your password" name="password" id="password" required><br><br>
+            <label for="muslim">Religion : </label>
+            <input type="radio" name="religion" id="muslim"> Muslim
+            <input type="radio" name="religion" id="hindu"> Hindu
+            <input type="radio" name="religion" id="other-religion"> Others<br><br>
+            <label for="male">Gender : </label>
+            <input type="checkbox" name="gender" id="male"> Male
+            <input type="checkbox" name="gender" id="female"> Female
+            <input type="checkbox" name="gender" id="other-gender"> Others<br><br>
+        </fieldset>
+        <br>
+        <label for="department">Department : </label>
+            <select name="department" id="department">
+                <option value="cse" selected>CSE</option>
+                <option value="ce">CE</option>
+                <option value="me">ME</option>
+                <option value="eee">EEE</option>
+            </select><br><br>
+        <label for="feedback">Feedback</label><br>
+        <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea><br><br>
+        <input type="submit" value="Submit">
+        <button type="reset">Clear</button>
+    </form><hr>
+    <video controls height="250" width="400">
+        <source src="/HTML/Videos/Psycho_Saiyaan__Saaho__Prabhas,_Shraddha_Kapoor__Tanishk_Bagchi,_Dhvani_Bhanushali,_Sachet_Tandon(1080p).mp4" type="video/mp4">
+    </video>
+    <audio controls>
+        <source src="/HTML/Audios/i_love_you_baby_lofi.mp3" type="audio/mpeg">
+    </audio><br><br>
+    <ol>
+        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+        <li><a href="" id="#top">Go to top</a></li>
+    </ol>
+    <p>developed by <span id="developed">&copy; Muammar Shahriar Khan Dhrubo</span></p>
+</body>
+</html>
